@@ -45,3 +45,7 @@ If you have state that's important to retain within a component, consider creati
 import { writable } from 'svelte/store'
 export default writable(0)
 ```
+## References 
+- https://pocketbase.io/docs/collections/
+- https://www.npmjs.com/package/svelte5-router
+- https://svelte.dev/docs/svelte/overview

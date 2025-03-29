@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/dashboard">Dashboard</Link>
+    <Link to="/">🏠 Home</Link>
+    <Link to="/articles">📃 Articles</Link>
+    <Link to="/about">👤 About</Link>
 </nav>
