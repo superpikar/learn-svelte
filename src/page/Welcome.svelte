@@ -2,32 +2,34 @@
     import svelteLogo from '../assets/svelte.svg'
     import viteLogo from '/vite.svg'
     import Counter from '../lib/Counter.svelte'
-    import MainMenu from "../lib/MainMenu.svelte";
 </script>
 
 <main>
-    <MainMenu />
-    <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
-            <img src={viteLogo} class="logo" alt="Vite Logo" />
-        </a>
-        <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-            <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-        </a>
+  <div class="flex">
+    <a href="https://vite.dev" target="_blank" rel="noreferrer">
+      <img src={viteLogo} class="logo" alt="Vite Logo" />
+    </a>
+    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
+      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
+    </a>
+  </div>
+  <h1 class="uk-h1">Vite + Svelte</h1>
+
+  <div class="uk-card">
+    <div class="uk-card-body">
+      <Counter />
     </div>
-    <h1>Vite + Svelte</h1>
+  </div>
 
-    <div class="card">
-        <Counter />
-    </div>
+  <p class="uk-paragraph">
+    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
+  </p>
 
-    <p>
-        Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
+  <blockquote>
+    <p class="text-lg">
+      Click on the Vite and Svelte logos to learn more
     </p>
-
-    <p class="read-the-docs">
-        Click on the Vite and Svelte logos to learn more
-    </p>
+  </blockquote>
 </main>
 
 <style>

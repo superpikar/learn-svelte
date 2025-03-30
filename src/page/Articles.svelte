@@ -1,7 +1,6 @@
 <script>
-  import { Link } from 'svelte5-router';
-  import { onMount } from 'svelte';
-  import MainMenu from "../lib/MainMenu.svelte";
+  import {Link} from 'svelte5-router';
+  import {onMount} from 'svelte';
   import PocketBase from "pocketbase";
 
   let entries = $state([]);
@@ -13,13 +12,23 @@
   })
 </script>
 
-<MainMenu/>
-<h1>Articles</h1>
+<h1 class="uk-h1">Articles</h1>
 
-<ul>
-{#each entries as item}
-    <li>
-        <Link to="/articles/{item.id}">{item.title}</Link>
-    </li>
-{/each}
-</ul>
+<div>
+  {#each entries as item}
+  <div class="uk-card uk-card-body space-y-6 mb-4">
+    <Link to="/articles/{item.id}" class="">
+      <div class="flex gap-x-4">
+        <div class="flex-1">
+          <h3 class="uk-h3">
+            {item.title}
+          </h3>
+          <p class="mt-2 text-muted-foreground">
+            {item.updated}
+          </p>
+        </div>
+      </div>
+    </Link>
+  </div>
+  {/each}
+</div>

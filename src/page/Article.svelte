@@ -1,10 +1,11 @@
 <script>
   import { onMount } from 'svelte';
-  import MainMenu from "../lib/MainMenu.svelte";
   import PocketBase from "pocketbase";
   import {Link} from "svelte5-router";
 
-  let { id } = $props();
+  let {
+    id
+  } = $props();
 
   let entry = $state({});
   const pb = new PocketBase(import.meta.env.VITE_POCKETBASE_URL);
@@ -15,10 +16,10 @@
   })
 </script>
 
-<MainMenu/>
-<h1>{entry.title}</h1>
+<h1 class="uk-h1">{entry.title}</h1>
 
-<div>
+<div class="uk-paragraph">
     {@html entry.content}
 </div>
-<Link to="/articles">⬅️ Back to article list</Link>
+
+<Link to="/articles" class="uk-btn uk-btn-default">⬅️ Back to article list</Link>

@@ -5,9 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Svelte + TS</title>
+    <link
+        rel="preload"
+        href="/fonts/geist-font/fonts/GeistVariableVF.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    />
+    <link
+        rel="preload"
+        href="/fonts/geist-font/fonts/GeistMonoVariableVF.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+    />
+    <link rel="stylesheet" href="/fonts/geist-font/style.css" />
+<!--    <link rel="stylesheet" href="/src/index.css" />-->
+
+<!--
+    <link
+        rel="stylesheet"
+        href="node_modules/franken-ui/dist/css/franken-ui.css"
+    />
+-->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/franken-ui@2.0.0/dist/css/core.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/franken-ui@2.0.0/dist/css/utilities.min.css"
+    />
   </head>
-  <body>
+  <body class="bg-background font-geist-sans text-sm text-foreground antialiased">
     <div id="app"></div>
+    <script
+        src="https://unpkg.com/franken-ui@2.0.0/dist/js/core.iife.js"
+        type="module"
+    ></script>
+    <script
+        src="https://unpkg.com/franken-ui@2.0.0/dist/js/icon.iife.js"
+        type="module"
+    ></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

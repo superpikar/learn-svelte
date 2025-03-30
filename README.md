@@ -49,3 +49,4 @@ export default writable(0)
 - https://pocketbase.io/docs/collections/
 - https://www.npmjs.com/package/svelte5-router
 - https://svelte.dev/docs/svelte/overview
+- https://github.com/franken-ui/template-svelte/blob/master/index.html

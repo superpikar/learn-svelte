@@ -9,12 +9,12 @@
 </script>
 
 <div>
-  count is {count}
+  <p class="uk-paragraph">count is {count}</p>
   <div>
-    <button onclick={decrement}>
+    <button class="uk-btn uk-btn-primary" onclick={decrement}>
       -1
     </button>      
-    <button onclick={increment}>
+    <button class="uk-btn uk-btn-primary" onclick={increment}>
       +1
     </button>
   </div>
